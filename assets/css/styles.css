@@ -10,20 +10,26 @@ a {
     text-decoration: none;
 }
 
+p{
+    margin-bottom: 3rem;
+}
+
 * {
     margin: 0;
     padding: 0;
-    
+
 }
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
     color: var(--primary-color);
+    line-height: 1.5;
 }
 
 h1,
@@ -42,7 +48,10 @@ h1 {
 }
 
 h2 {
-    font-size: 5.5rem;
+    font-size: 8rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1.2;
 }
 
 h3 {
@@ -82,6 +91,7 @@ h6 {
 
 .white-bg {
     background: var(--white-color);
+    color: var(--primary-color);
 }
 
 .menu {
@@ -103,11 +113,10 @@ h6 {
 .menu h1 {
     font-size: 2.3rem;
     color: var(--primary-color);
+    padding: 1rem;
 }
 
-.menu h1 {
-    color: inherit;
-}
+
 
 .menu ul {
     list-style: none;
@@ -138,12 +147,75 @@ h6 {
     left: 25%;
 }
 
-.menu-spacing{
-    height: 65px;
+.menu-spacing {
+    height: 120px;
 }
-.intro-content{
+
+.intro-content {
+    position: relative;
+    top: -4rem;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
-    height: 100vh;
     gap: var(--gap);
+    height: 100vh;
+}
+
+.intro-text-content,
+.intro-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    line-height: 1.2;
+}
+
+
+.intro-img img {
+    max-width: 100%;
+    height: auto;
+    top: 12rem;
+
+}
+
+.top3-content{
+    max-width: 65rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.grid-gallery-content{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: var(--gap);
+    counter-reset: gridcounter;
+}
+
+.grid h3{
+    font-size: 3rem;
+    position: relative;
+    padding-left: 5rem;
+    padding-bottom: 3rem;
+}
+
+.grid h3::before{
+    counter-increment: gridcounter;
+    content: counter(gridcounter);
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    top: -4rem;
+    left: -2rem;
+    transform: rotate(5deg);
+
+
 }
