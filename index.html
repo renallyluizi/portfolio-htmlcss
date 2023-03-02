@@ -13,9 +13,11 @@
         rel="stylesheet">
 </head>
 
-<body class="main-bg">
+<body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="menu">
-        <div class="main-content menu-content">
+        <div class=" menu-content">
             <h1>
                 <a href="#">LOGO</a>
             </h1>
@@ -24,16 +26,16 @@
                 <ul>
                     <li><a href="#intro">intro</a></li>
                     <li><a href="#top3">top 3</a></li>
+                    <li><a href="#grid-one">grid</a></li>
                     <li><a href="#gallery">gallery</a></li>
-                    <li><a href="#">work</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a href="#contact">contact</a></li>
                 </ul>
             </nav>
         </div>
     </aside>
 
     <div class=".menu-spacing"></div>
-    
+
     <section id="intro" class="intro main-bg section-size">
         <div class="main-content intro-content">
             <div class="intro-text-content">
@@ -50,36 +52,123 @@
     <section id="top3" class="white-bg section-size">
         <div class="main-content top3-content ">
             <h2>TOP 3 JOBS</h2>
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae pariatur necessitatibus quis facere, doloribus cumque accusamus iusto, dolorum, repudiandae vel totam inventore. Perspiciatis asperiores nam minima voluptatibus ipsa iusto neque.</P>
-            
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae pariatur necessitatibus quis facere, doloribus cumque accusamus iusto, dolorum, repudiandae vel totam inventore. Perspiciatis asperiores nam minima voluptatibus ipsa iusto neque.</P>
-            
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae pariatur necessitatibus quis facere, doloribus cumque accusamus iusto, dolorum, repudiandae vel totam inventore. Perspiciatis asperiores nam minima voluptatibus ipsa iusto neque.</P>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae pariatur necessitatibus quis facere,
+                doloribus cumque accusamus iusto, dolorum, repudiandae vel totam inventore. Perspiciatis asperiores nam
+                minima voluptatibus ipsa iusto neque.</P>
+
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae pariatur necessitatibus quis facere,
+                doloribus cumque accusamus iusto, dolorum, repudiandae vel totam inventore. Perspiciatis asperiores nam
+                minima voluptatibus ipsa iusto neque.</P>
+
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae pariatur necessitatibus quis facere,
+                doloribus cumque accusamus iusto, dolorum, repudiandae vel totam inventore. Perspiciatis asperiores nam
+                minima voluptatibus ipsa iusto neque.</P>
         </div>
     </section>
 
-    <section id="gallery" class="grid-gallery main-bg section-size">
-    <div class="main-content grid-gallery-content">
-        <div class="div">
-            <h2>My grid-gallery</h2>
-            <div class="grid">
-            <article>
-                <h3>teste1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos atque error neque laborum facilis minus distinctio omnis fugit nulla, aperiam, repellendus explicabo voluptatum et tempora laudantium non eveniet similique incidunt!</p>
-            </article>
-            <article>
-                <h3>teste1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sunt fuga, itaque recusandae molestias ad debitis sed deleniti, sequi aliquam, eum aut impedit ullam voluptatem laudantium omnis et molestiae nostrum. </p>
-            </article>
-            <article>
-                <h3>teste1</h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sunt fuga, itaque recusandae molestias ad debitis sed deleniti, sequi aliquam, eum aut impedit ullam voluptatem laudantium omnis et molestiae nostrum. </p>
-            </article>
+    <section id="grid-one" class="main-bg section-size">
+        <div class="main-content grid-content">
+            <div class="div">
+                <h2>My grid-one</h2>
+                <div class="grid">
+                    <article>
+                        <h3>teste1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos atque error neque laborum
+                            facilis minus distinctio omnis fugit nulla, aperiam, repellendus explicabo voluptatum et
+                            tempora laudantium non eveniet similique incidunt!</p>
+                    </article>
+                    <article>
+                        <h3>teste1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sunt fuga, itaque
+                            recusandae molestias ad debitis sed deleniti, sequi aliquam, eum aut impedit ullam
+                            voluptatem laudantium omnis et molestiae nostrum. </p>
+                    </article>
+                    <article>
+                        <h3>teste1</h3>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sunt fuga, itaque
+                        recusandae molestias ad debitis sed deleniti, sequi aliquam, eum aut impedit ullam voluptatem
+                        laudantium omnis et molestiae nostrum. </p>
+                    </article>
+                </div>
             </div>
         </div>
-    </div>
-        
+
     </section>
+    <section id="gallery" class="grid-gallery white-bg section-size">
+        <div class="main-content grid-gallery-content">
+            <h2 class="grid-heading">My gallery</h2>
+            <p class="grid-description">descriçãozinha</p>
+
+            <div class="grid">
+                <div class="galerry-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=1" alt="radom image from unsplash">
+                </div>
+                <div class="galerry-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=2" alt="radom image from unsplash">
+                </div>
+                <div class="galerry-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=3" alt="radom image from unsplash">
+                </div>
+                <div class="galerry-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=4" alt="radom image from unsplash">
+                </div>
+                <div class="galerry-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=5" alt="radom image from unsplash">
+                </div>
+                <div class="galerry-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=6" alt="radom image from unsplash">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="intro main-bg section-size">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>Textozinho</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, obcaecati? Reprehenderit itaque
+                    quisquam porro deleniti expedita eius vitae nisi! Ipsa eum blanditiis quaerat! Et assumenda ipsam
+                    ratione corporis culpa suscipit?</p>
+            </div>
+            <div class="intro-img"><img src="assets/img/intro-dev.svg"
+                    alt="desenho de mulher tralhando em frente ao notebook."></div>
+            <div class="contact-form">
+                <fieldset class="form-grid">
+                    <legend>Contact me</legend>
+                    
+                    <div class="form-group">
+                        <label for="firstname">First name</label>
+                        <input type="text" name="firstname" id="firstname" placeholder="Your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastname">Last name</label>
+                        <input type="text" name="lastname" id="lastname" placeholder="Your last name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="text" name="email" id="email" placeholder="Your e-mail">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Your message..."></textarea>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <button type="submit">Send message</button>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer white-bg">
+        <p><a target="_blank" href="https://www.linkedin.com/in/renallyluizi/"> Feito com <span class="heart">❤</span> por Renally Tavares</a></p>
+    </footer>
+
+
 </body>
 
 </html>
